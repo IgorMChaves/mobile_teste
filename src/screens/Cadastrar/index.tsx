@@ -4,7 +4,6 @@ import {
   Text,
   TextInput,
   KeyboardAvoidingView,
-  ImageBackground,
 } from "react-native";
 import { MaterialIcons, Entypo, Ionicons } from "@expo/vector-icons";
 import Button from "../../components/Button";
@@ -21,11 +20,7 @@ export default function Cadastrar({ navigation }: LoginTypes) {
 
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={require("../../assets/fundo.png")}
-        style={styles.container}
-      >
-        <KeyboardAvoidingView>
+      <KeyboardAvoidingView>
           <Text style={styles.title}>Cadastre-se</Text>
           <View style={styles.formRow}>
             <Ionicons name="person" style={styles.icon} />
@@ -49,10 +44,9 @@ export default function Cadastrar({ navigation }: LoginTypes) {
               autoCapitalize="none"
             />
           </View>
-          <Button title="Salvar" type="purple" onPress={handleSignIn} />
-          <Button title="Voltar" type="green" onPress={handleLogin} />
+          <Button title="Salvar" type="black" onPress={handleSignIn} />
+          <Button title="Voltar" type="grey" onPress={handleLogin} />
         </KeyboardAvoidingView>
-      </ImageBackground>
     </View>
   );
 }

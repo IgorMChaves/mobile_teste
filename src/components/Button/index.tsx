@@ -7,11 +7,9 @@ export default function Button({ onPress, title, type, ...rest }: ButtonProps) {
   return (
     <TouchableOpacity
       style={
-        type == "green"
-          ? styles.buttonGreen
-          : type == "orange"
-          ? styles.buttonOrange
-          : styles.buttonPurple
+        type == "black"
+          ? styles.buttonBlack
+          : styles.buttonGrey
       }
       onPress={onPress}
       {...rest}

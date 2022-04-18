@@ -2,7 +2,9 @@ import { StyleSheet } from 'react-native'
 import colors from '../../styles/colors'
 
 const styles = StyleSheet.create({
-  container: {
+
+container: {
+    backgroundColor: colors.lightGrey,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
@@ -11,7 +13,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     textAlign: 'center',
-    color: colors.purple,
+    color: colors.black,
     marginBottom: 20,
   },
   formRow: {
@@ -19,12 +21,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: colors.purple,
+    borderColor: colors.grey,
+    backgroundColor: colors.white,
     borderRadius: 5,
   },
   icon: {
     fontSize: 24,
-    color: colors.purple,
+    color: colors.grey,
     padding: 10
   },
   input: {
